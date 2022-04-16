@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+/* ATTRIBUTION */
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a {
+   color: hsl(228, 45%, 44%); 
+  }
