@@ -1,8 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  font-family: Kumbh Sans;
 }
 
+body {
+  background: rgb(101,101,231);
+  background: linear-gradient(0deg, rgba(101,101,231,1) 0%, rgba(175,103,233,1) 100%) no-repeat center center fixed;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  background-color: white;
+  width: 920px;
+  height: 509px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 472px;
+  height: 359px;
+  margin-left: -5rem;
+  /* margin-top: 4.375rem; */
+}
+
+.accordion-wrapper {
+  width: 350px;
+}
+
+.accordion {
+  color: #4B4C5F;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+.accordion:hover {
+  color: #F47B56;
+}
+
+.arrow {
+  width: 12px;
+  height: 8px;
+  display: block;
+}
+.rotate{
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.up{
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.active  {
+  font-weight: 700;
+  color: #1E1F36;
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid #E8E8EA;;
+}
+
+.question {
+  font-size: 0.875;
+  line-height: 1.5;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+.answer {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #787887;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
 
 
 
