@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap');
 
 * {
   padding: 0;
@@ -21,24 +21,46 @@ body {
 }
 
 .card {
-  background-color: white;
+  background: url(images/bg-pattern-desktop.svg), white;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -520px -255px;
   width: 920px;
   height: 509px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  border-radius: 23px;
+  -webkit-box-shadow: 0px 32px 27px -8px rgba(59,59,135,0.81); 
+  box-shadow: 0px 32px 27px -8px rgba(59,59,135,0.81);
+  margin-top: 1.5rem;
 }
 
 .hero-img {
   width: 472px;
   height: 359px;
-  margin-left: -5rem;
+  margin-left: -7.9rem;
   /* margin-top: 4.375rem; */
+}
+.hero-img-box {
+  position: absolute;
+  margin-left: -915px;
+  margin-top: 95px;
+}
+.hero-img-mobile {
+  display: none;
 }
 
 .accordion-wrapper {
   width: 350px;
+  margin-right: 2.99rem;
+  /* margin-bottom: 2rem; */
+}
+
+.accordion-title {
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .accordion {
@@ -103,15 +125,68 @@ body {
   padding-bottom: 1rem;
 }
 
-
-
-
-
 /* ATTRIBUTION */
 .attribution { 
   font-size: 11px; 
   text-align: center; 
+  color: white;
+  margin-top: 1.5rem;
 }
 .attribution a {
-   color: hsl(228, 45%, 44%); 
+   color: white;
+   text-decoration: none;
+}
+.attribution a:hover {
+  color: rgb(234, 209, 255);
+}
+
+/* MOBILE */
+@media (max-width: 1008px) {
+  .card {
+    width: 327px;
+    height: 535px;
+    background: url(images/bg-pattern-mobile.svg), white;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 40px 8px;
   }
+  .hero-img, .hero-img-box {
+    display: none;
+  }
+
+  .hero-img-mobile {
+    display: block;
+    position: absolute;
+    width: 237px;
+    margin-top: -34rem;
+  }
+  
+  .accordion-title {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .accordion-wrapper {
+    margin: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .accordion {
+    font-weight: 300;
+  }
+
+  .question {
+    font-size: 0.813rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .answer {
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
+  
+  .active {
+    font-weight: 600;
+  }
+}
