@@ -47,8 +47,10 @@ body {
   position: absolute;
   /* margin-left: -915px;
   margin-top: 95px; */
-  left: 195px;
-  top: 397px;
+  /* left: 195px;
+  top: 397px; */
+  margin-left: -58%;
+  margin-top: 5.5%;
 }
 .hero-img-mobile {
   display: none;
