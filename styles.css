@@ -24,43 +24,53 @@ body {
   background: url(images/bg-pattern-desktop.svg), white;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: -520px -255px;
+  background-position: -530px -265px;
+ 
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+
   width: 920px;
   height: 509px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 23px;
   -webkit-box-shadow: 0px 32px 27px -8px rgba(59,59,135,0.81); 
   box-shadow: 0px 32px 27px -8px rgba(59,59,135,0.81);
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
 
-.hero-img {
-  width: 472px;
-  height: 359px;
-  margin-left: -7.9rem;
-  /* margin-top: 4.375rem; */
-}
-.hero-img-box {
-  position: absolute;
-  /* margin-left: -915px;
-  margin-top: 95px; */
-  
-  left: 225px;
-  top: 397px;
-  /* moved */
-  /* margin-left: -58%;
-  margin-top: 5.5%; */
-}
 .hero-img-mobile {
   display: none;
 }
 
+
+
+.img-section-center {
+  overflow-x: hidden;
+}
+
+.container-img {
+  display: block;
+  margin-top: 4.7rem;
+  margin-left: -4.5rem;
+}
+
+.container-img-2 {
+  display: block;
+  margin-left: -20.5%;
+  margin-top: -48%;
+}
+
+
+
+
 .accordion-wrapper {
   width: 350px;
-  margin-right: 2.99rem;
+  margin-left: 1rem;
+  margin-top: 4rem;
   /* margin-bottom: 2rem; */
 }
 
@@ -154,9 +164,9 @@ body {
     background: url(images/bg-pattern-mobile.svg), white;
     background-repeat: no-repeat;
     background-size: 75%;
-    background-position: 40px 8px;
+    background-position: 39.5px -6px;
   }
-  .hero-img, .hero-img-box {
+  .img-section {
     display: none;
   }
 
@@ -164,17 +174,19 @@ body {
     display: block;
     position: absolute;
     width: 237px;
-    margin-top: -34rem;
+    margin-top: -6.75rem;
+    margin-left: 2.8rem;
   }
   
   .accordion-title {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     text-align: center;
   }
 
   .accordion-wrapper {
-    margin: 1.5rem;
+    margin: 24px;
     margin-top: 4rem;
+    width: 279px;
   }
 
   .accordion {
