@@ -45,8 +45,10 @@ body {
 }
 .hero-img-box {
   position: absolute;
-  margin-left: -915px;
-  margin-top: 95px;
+  /* margin-left: -915px;
+  margin-top: 95px; */
+  left: 195px;
+  top: 397px;
 }
 .hero-img-mobile {
   display: none;
