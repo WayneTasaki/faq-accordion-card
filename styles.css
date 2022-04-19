@@ -45,11 +45,12 @@ body {
 }
 .hero-img-box {
   position: absolute;
-  margin-left: -915px;
-  margin-top: 95px;
+  /* margin-left: -915px;
+  margin-top: 95px; */
+  
+  left: 225px;
+  top: 397px;
   /* moved */
-  /* left: 195px;
-  top: 397px; */
   /* margin-left: -58%;
   margin-top: 5.5%; */
 }
